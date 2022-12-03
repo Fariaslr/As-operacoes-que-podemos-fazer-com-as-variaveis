@@ -2,27 +2,27 @@
 #include <locale.h>
 
 /*
-    15) Faça um programa para ler um número inteiro positivo de três dígitos. Em seguida, calcule e mostre o número formado pelos dígitos invertidos do número lido. 
+    15) FaÃ§a um programa para ler um nÃºmero inteiro positivo de trÃªs dÃ­gitos. Em seguida, calcule e mostre o nÃºmero formado pelos dÃ­gitos invertidos do nÃºmero lido. 
     Exemplo: 
-    Número lido = 123 
-    Número gerado = 321
+    NÃºmero lido = 123 
+    NÃºmero gerado = 321
 */
 
 int main(){
-    int nmr,c,d,u;
+    int numero,centena,dezena,unidade;
     setlocale(LC_ALL,"");
-    printf("Digite um número de 3 dígitos para inverter: ");
-    scanf("%d",&nmr);
+    printf("Digite um nÃºmero de 3 dÃ­gitos para inverter: ");
+    scanf("%d",&numero);
 
-    if(nmr>99 & nmr<999){
+    if(numero > 99 & numero < 999){
         
-		c=nmr/100;
-        d=(nmr%100)/10;
-        u=(nmr%10);
+		centena = numero / 100;
+        dezena = (numero % 100)/10;
+        unidade = (numero % 10);
         
-        printf("O número %d invertido é %d%d%d.\n",nmr,u,d,c);
+        printf("O nÃºmero %d invertido Ã© %d%d%d.\n",numero,unidade,dezena,centena);
     }
-    else printf("Digite somente número de 3 dígitos!\n");
+    else printf("Digite somente nÃºmero de 3 dÃ­gitos!\n");
 
     return 0;
 }
