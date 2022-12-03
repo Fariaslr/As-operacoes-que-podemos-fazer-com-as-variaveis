@@ -16,7 +16,7 @@ int main(){
 
     if(numero > 99 & numero < 999){
         
-		centena = numero / 100;
+	centena = numero / 100;
         dezena = (numero % 100)/10;
         unidade = (numero % 10);
         
